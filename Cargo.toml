@@ -13,7 +13,11 @@ exclude = [".gitignore", ".vscode/*", ".github/*"]
 
 [dependencies]
 criterion = "0.5.0"
-perfcnt = "0.8.0"
+
+[dependencies.perfcnt]
+git = "https://github.com/ticketmaster/rust-perfcnt"
+rev = "667176423b770c3c8eb1eadaabebdae1c6281933"
+#perfcnt = "0.8.1"
 
 [[bench]]
 path = "examples/fibo_bench.rs"
